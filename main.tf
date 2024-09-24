@@ -11,7 +11,7 @@ data "aws_ami" "app_ami"{
 		values = ["hvm"]
 	}
   
-	owners = [""] #Bitnami
+	owners = ["762083433730"] #Bitnami
 }
 
 data "aws_vpc" "default"{
