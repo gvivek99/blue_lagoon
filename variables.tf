@@ -1,4 +1,4 @@
 variable "instance_type" {
-	decritpion = ""
-	default = ""
+	decritpion = "This is EC2 instance type"
+	default = "t3.nano"
 }
