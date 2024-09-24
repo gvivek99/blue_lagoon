@@ -1,19 +1,3 @@
-data "aws_ami" "app_ami"{
-	most_recent = "true"
-  
-	filter { 
-		name = "name"
-		values = ["ami-08d8ac128e0a1b91c"]
-	}
-  
-	filter {
-		name = "virtualization-type"
-		values = ["hvm"]
-	}
-  
-	owners = ["762083433730"] #Bitnami
-}
-
 data "aws_vpc" "default"{
 	default = "true"
 }
