@@ -8,7 +8,7 @@ data "aws_ami" "app_ami"{
   
 	filter {
 		name = "virtualization-type"
-		value = ["hvm"]
+		values = ["hvm"]
 	}
   
 	owners = [""] #Bitnami
