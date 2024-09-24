@@ -3,7 +3,7 @@ data "aws_ami" "app_ami"{
   
 	filter { 
 		name = "name"
-		values = ["bitnami-tomcat-*-x86_64-hvm-ebs-nami"]
+		values = ["ami-08d8ac128e0a1b91c"]
 	}
   
 	filter {
