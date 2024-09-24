@@ -59,5 +59,4 @@ resource "aws_security_group_rule" "blog_http_out"{
 
   tags = {
     Name = "example-security-group"
-  }
 }
