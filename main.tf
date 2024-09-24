@@ -19,7 +19,7 @@ data "aws_vpc" "default"{
 }
 
 resource "aws_instance" "blog"{
-	ami = "data.aws_ami.app_ami.id"
+	ami = "ami-08d8ac128e0a1b91c"
 	instance_type = var.instance_type
 	
 	tags = {
