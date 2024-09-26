@@ -57,7 +57,7 @@ resource "aws_iam_user" "myuser"{
     count = 3
     path = "/system/"
     tags = {
-        tag-key = ""iamuser.${count.index}"
+        tag-key = "iamuser.${count.index}"
     }
 
 }
