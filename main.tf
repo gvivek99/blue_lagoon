@@ -53,11 +53,11 @@ resource "aws_security_group" "blog" {
 }
 
 resource "aws_iam_user" "myuser"{
-    name = "iamuser".$(count.index)
+    name = "iamuser".${count.index}
     count = 3
     path = "/system/"
     tags = {
-        tag-key = ""iamuser".$(count.index)
+        tag-key = ""iamuser".${count.index}
     }
 
 }
